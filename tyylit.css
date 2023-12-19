@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+/*header*/
+.container{
+    width: 100%;
+    min-height:950px;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*navigointi*/
+.navbar{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.menu{
+    width: 25px;
+    cursor: pointer;
+    display:none;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: font-size 0.5s;
+}
+
+nav ul li a:hover{
+    color:#4874b4;
+    font-size: 21px;
+}
+
+/*sivun alku*/
+.sisalto{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    border-bottom: solid 1px blue;
+    margin-top: -700px;
+}
+
+#elwell{
+    color: #4874b4;
+}
+
+.osa1{
+    flex-basis: 40%;
+    position:relative;
+    margin-left:80px;
+    font-size: 18px;
+}
+
+.osa1:after{
+    content: "";
+    width: 5px;
+    height: 90%;
+    background: linear-gradient(#ADD8E6, #00008B);
+    position:absolute;
+    left:-40px;
+    top: 8px;
+}
+
+.osa1kuva{
+    position:relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(100% 25%, 85% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+
+.osa1kuva .asentaja{
+    width: 90%;
+}
+
+.tausta1{
+    position:absolute;
+    right:0;
+    top:0;
+    background:linear-gradient(#ADD8E6, #00008B);
+    border-radius: 20px 0 0 20px;
+    height:100%;
+    width: 80%;
+    z-index: -1;
+}
+
+/*sivun toinen osio*/
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px rgb(18, 18, 65);
+    padding: 50px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+.box {
+    height: 600px;
+}
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+.box {
+    text-align: center;
+    height: 400px;
+}
+}
+
+.one {
+    border-top: 3px solid #4874b4;
+}
+.two {
+    border-top: 3px solid #4874b4;
+}
+.three {
+    border-top: 3px solid #4874b4;
+}
+.four {
+    border-top: 3px solid #4874b4;
+}
+
+#palvelut h2 {
+    color: #4874b4;
+    font-weight: 900;
+}
+
+
+@media (min-width: 950px) {
+.firstbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-down {
+    position: relative;
+    top: 150px;
+}
+.box {
+    width: 20%;
+    
+}
+}
+
+/*footer*/
+footer {
+    background-color: #4874b4;
+    width: 100%;
+    overflow-x: hidden;
+    height: 90px; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer p{
+    color: white;
+    margin-right: 1550px;
+    margin-top: 20px;
+}
+
+.footercontent{
+    margin-left: -150px;
+}
+
+footer .otaYhteytta{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 10px;
+}
+
+footer .otaYhteytta:hover{
+    color: lightblue;
+}
+
+/*kontaktit css*/
+.contactbox {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+    border: solid 4px #4874b4;
+    height: 400px;
+}
+
+.contacts {
+    border-right: solid 1px #4874b4;
+}
+
+.contacts:nth-child(1) {
+flex: 30%;
+background-image: 
+linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+),
+url(img/3.jpg);
+    color: #fff;
+    background-position: -5px;
+}
+
+.contacts:nth-child(2) {
+	flex: 35%;
+}
+
+.contacts h1 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+    font-weight: bold;
+	margin-top: 50px;
+    margin-left: 15px;
+    text-shadow: 2px 3px 1px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+    text-align: center;
+}
+
+.contacts h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 50px;
+    margin-left: 15px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+    text-align: center;
+}
+
+.contacts p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 0px;
+    margin-left: 15px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8), 0px 0px 2px  rgba(0,0,0,1);
+    text-align: center;
+}
+
+.contacts iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.contactfooter{
+    margin-top: 404px;
+}
+.contactlista{
+    color: white;
+    margin-left: 160px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+/*header kontaktisivulla*/
+.contactcontainer{
+    width: 100%;
+    min-height: 300px;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* mediaq */
+@media only screen and (max-width: 1600px){
+.sisalto{
+    margin-top: -550px;
+    border: 0;
+}
+}
+@media only screen and (max-width: 600px){
+    footer .otaYhteytta{
+        margin-left:0px;
+    }
+}
+@media only screen and (max-width: 700px){
+nav ul{
+    width: 100%;
+    background:linear-gradient(#ADD8E6, #00008B);
+    position:absolute;
+    top: 75px;
+    right:0;
+    z-index: 2;
+}
+nav ul li{
+    display:block;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+nav ul li a{
+    color: #fff;
+}
+.menu{
+    display:block;
+    z-index: 5;
+    margin-bottom: 170px;
+}
+.logo{
+    z-index: 4;
+    background-color: #ffffff;
+}
+#menuList{
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sisalto{
+    flex-direction: column-reverse;
+    margin: 0px 0;
+    margin-top: -400px;
+    border:0;
+}
+.container{
+    min-height: 650px;
+}
+footer{
+    width: 100%;
+}
+
+footer ul,li{
+    font-size: 15px;
+}
+
+#hamppari{
+    display:none;
+}
+.contactbox {
+    flex-direction: column;
+    height: 200px;
+    border: 0;
+}
+.contacts iframe {
+	height: 300px;
+}
+.footercontent{
+    margin-left:-300px;
+}
+.contactfooter{
+    margin-top: 600px;
+}
+.contacts h1 {
+    margin-top: 10px;
+
+}
+.contacts h2 {
+	margin-top: 0px;
+
+}
+.contacts p {
+	margin-bottom: 20px;
+}
+.contacts {
+    border-right: 0;
+}
+.contactlista{
+    margin-left:300px;
+}
+}
