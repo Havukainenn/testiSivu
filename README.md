@@ -1,1 +1,1 @@
-Kouluprojekti yksinkertainen sivu yritykselle tekniikoilla HTML CSS ja vanilla JS
+Kouluprojekti, yksinkertainen sivu yritykselle tekniikoilla HTML CSS ja vanilla JS
