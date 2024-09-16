@@ -1,2 +1,2 @@
-Kouluprojekti, yksinkertainen sivu yritykselle tekniikoilla HTML CSS ja vanilla JS
-Ensimmäiset tekemäni nettisivut
+A school project
+A simple elegant page made with HTML, CSS and JavaScript
